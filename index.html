@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Art Class | Create. Learn. Explore.</title>
+<style>
+:root{--pink:#f7c9d9;--yellow:#f9e6a8;--blue:#c8e6f5;--green:#cfe9d6;--purple:#ddd0f2;--peach:#f7d2bd;--ink:#283044;--white:#fff}
+*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fbfbfd}
+header{background:linear-gradient(100deg,var(--pink),var(--yellow),var(--green),var(--blue),var(--purple),var(--peach));padding:18px 7%;display:flex;align-items:center;justify-content:space-between;gap:20px;position:sticky;top:0;z-index:5}
+.brand{display:flex;align-items:center;gap:12px}.logo{width:48px;height:48px;border-radius:14px;background:#fff;display:grid;place-items:center;font-size:25px;box-shadow:0 3px 12px #0001}.brand h1{font-size:20px;margin:0}.brand p{margin:3px 0 0;font-size:12px}
+nav{display:flex;flex-wrap:wrap;gap:7px}nav a{color:var(--ink);text-decoration:none;font-weight:700;padding:9px 12px;border-radius:999px;background:#ffffffb8;font-size:13px}nav a:hover{background:#fff}
+.hero{padding:75px 7%;background:linear-gradient(135deg,#fff,#f7f1fb);display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+.hero h2{font-size:52px;line-height:1.02;margin:0 0 15px}.hero p{font-size:18px;line-height:1.6;max-width:650px}
+.cta{display:inline-block;margin-top:12px;padding:13px 18px;border-radius:12px;background:var(--ink);color:white;text-decoration:none;font-weight:bold}
+.art-card{background:white;border-radius:28px;padding:30px;box-shadow:0 14px 40px #28304418;text-align:center}.rainbow{height:190px;border-radius:20px;background:conic-gradient(from 210deg,var(--pink),var(--peach),var(--yellow),var(--green),var(--blue),var(--purple),var(--pink));display:grid;place-items:center;font-size:80px}
+section{padding:55px 7%}.section-title{text-align:center;margin-bottom:30px}.section-title h3{font-size:32px;margin:0 0 8px}.section-title p{margin:0;color:#657084}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{padding:25px;border-radius:20px;min-height:190px}.card:nth-child(1){background:var(--pink)}.card:nth-child(2){background:var(--blue)}.card:nth-child(3){background:var(--green)}.card:nth-child(4){background:var(--purple)}.card h4{margin:0 0 10px;font-size:22px}.card p{line-height:1.5}.card a{color:var(--ink);font-weight:bold}
+.info{background:white;border-radius:22px;padding:30px;box-shadow:0 8px 30px #0000000b;margin-top:25px}.info h3{margin-top:0}
+footer{padding:30px 7%;background:#283044;color:white;text-align:center}.support{background:linear-gradient(120deg,var(--yellow),var(--pink))}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.hero h2{font-size:40px}.cards{grid-template-columns:1fr 1fr}header{align-items:flex-start;flex-direction:column}}
+@media(max-width:520px){.cards{grid-template-columns:1fr}nav a{font-size:12px;padding:8px 9px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><div class="logo">🎨</div><div><h1>Art Class</h1><p>Create. Learn. Explore.</p></div></div>
+  <nav>
+    <a href="#home">Home</a><a href="#math">Math</a><a href="#science">Science</a><a href="#social">Social Studies</a><a href="#ela">ELA</a><a href="#support">Contact Support</a><a href="#login">Student Login</a>
+  </nav>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div><h2>Welcome to<br>Art Class!</h2><p>A central place for students to find lessons, assignments, resources, and announcements. Learn something new, stay organized, and keep creating.</p><a class="cta" href="#subjects">Explore Classes →</a></div>
+  <div class="art-card"><div class="rainbow">🎨</div><h3>Learn • Create • Grow</h3><p>Middle-school learning resources with a bright, welcoming style.</p></div>
+</section>
+
+<section id="subjects">
+<div class="section-title"><h3>Explore Your Classes</h3><p>Choose a subject to get started.</p></div>
+<div class="cards">
+<div class="card" id="math"><h4>➗ Math</h4><p>Lessons, practice assignments, helpful resources, and class announcements.</p><a href="#math-info">Open Math →</a></div>
+<div class="card" id="science"><h4>🔬 Science</h4><p>Explore investigations, lessons, projects, resources, and announcements.</p><a href="#science-info">Open Science →</a></div>
+<div class="card" id="social"><h4>🌎 Social Studies</h4><p>Discover history, geography, civics, assignments, and learning resources.</p><a href="#social-info">Open Social Studies →</a></div>
+<div class="card" id="ela"><h4>📚 ELA</h4><p>Reading, writing, vocabulary, assignments, resources, and announcements.</p><a href="#ela-info">Open ELA →</a></div>
+</div>
+</section>
+
+<section>
+<div class="info" id="math-info"><h3>➗ Math</h3><p><b>Lessons:</b> Current classroom lessons will be posted here.</p><p><b>Assignments:</b> Check here for classwork and homework.</p><p><b>Resources:</b> Practice materials and reference links can be added here.</p><p><b>Announcements:</b> Important math-class updates will appear here.</p></div>
+<div class="info" id="science-info"><h3>🔬 Science</h3><p><b>Lessons:</b> Current science lessons and investigations.</p><p><b>Assignments:</b> Projects, labs, and classwork.</p><p><b>Resources:</b> Study guides and reference materials.</p><p><b>Announcements:</b> Important science updates.</p></div>
+<div class="info" id="social-info"><h3>🌎 Social Studies</h3><p><b>Lessons:</b> History, geography, civics, and culture.</p><p><b>Assignments:</b> Current class activities and projects.</p><p><b>Resources:</b> Maps, readings, and study materials.</p><p><b>Announcements:</b> Important class updates.</p></div>
+<div class="info" id="ela-info"><h3>📚 ELA</h3><p><b>Lessons:</b> Reading, writing, language, and vocabulary.</p><p><b>Assignments:</b> Current ELA work and projects.</p><p><b>Resources:</b> Reading and writing support.</p><p><b>Announcements:</b> Important ELA updates.</p></div>
+</section>
+
+<section class="support" id="support">
+<div class="section-title"><h3>💬 Contact Support</h3><p>Need help with the website or schoolwork?</p></div>
+<div class="info" style="text-align:center"><h3>Mr. Mike Korell</h3><p>Email support:</p><p><a class="cta" href="mailto:Mr.mikekorell@gmail.com">Mr.mikekorell@gmail.com</a></p></div>
+</section>
+
+<section id="login">
+<div class="section-title"><h3>🔐 Student Login</h3><p>This button is a placeholder for your school's approved student-login system.</p></div>
+<div class="info" style="text-align:center"><p>For safety, this site does not collect or store student passwords.</p><a class="cta" href="#support">Get Login Help</a></div>
+</section>
+</main>
+
+<footer><strong>Art Class</strong> · Create. Learn. Explore.<br><small>Teacher: Mr. Mike Korell · Student support: Mr.mikekorell@gmail.com</small></footer>
+</body>
+</html>
